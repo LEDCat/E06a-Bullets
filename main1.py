@@ -114,7 +114,7 @@ class Window(arcade.Window):
             y = self.player.center_y + 15
             bullet = Bullet((x,y),(0,10),BULLET_DAMAGE)
             self.bullet_list.append(bullet)
-            pass
+            
 
 def main():
     window = Window(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE)

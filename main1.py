@@ -88,7 +88,6 @@ class Window(arcade.Window):
     def update(self, delta_time):
         self.bullet_list.update()
         for e in self.enemy_list:
-
             damage = arcade.check_for_collision_with_list(e, self.bullet_list)
             for d in damage:
                 e.hp = e.hp - d.damage
